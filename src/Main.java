@@ -10,7 +10,10 @@ public class Main {
             manoJugador.agregarCartaManoJugador();
         }
 
+        manoCuprier.mostrarManoCuprier();
         manoCuprier.mostrarCartaManoCuprier();
+        System.out.println("Puntos Cuprier: " + manoCuprier.valorManoCuprier());
         manoJugador.mostrarManoJugador();
+        System.out.println("Puntos Jugador: " + manoJugador.valorManoJugador());
     }
 }

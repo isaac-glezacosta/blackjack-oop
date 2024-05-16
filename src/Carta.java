@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class Carta {
     Random rand = new Random();
-    private ArrayList<Object> cartas = new ArrayList<>(Arrays.asList('A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'));
+    private ArrayList<Character> cartas = new ArrayList<>(Arrays.asList('A', '2', '3', '4', '5', '6', '7', '8', '9', 'D', 'J', 'Q', 'K'));
     private int numeroAleatorio;
 
-    public Object sacarCarta() {
+    public Character sacarCarta() {
         numeroAleatorio = rand.nextInt(13);
         return cartas.get(numeroAleatorio);
     }
