@@ -17,7 +17,7 @@ public class Mano {
 
     // Muestra una lista de las cartas de la mano del Cuprier
     public void mostrarManoCuprier() {
-        System.out.println(manoCuprier);
+        System.out.println("Mano Cuprier: " + manoCuprier);
     }
 
     // Muestra solo la primera carta del Cuprier
@@ -27,6 +27,8 @@ public class Mano {
 
     // Calcular el valor de la mano del Cuprier
     public int valorManoCuprier() {
+        int valorManoCuprier = 0;
+
         for (int i = 0; i < manoCuprier.size(); i++) {
             if (manoCuprier.get(i) == 'A') {
                 if (valorManoCuprier + 11 <= 21) {
@@ -56,6 +58,8 @@ public class Mano {
 
     // Calcular el valor de la mano del Jugador
     public int valorManoJugador() {
+        int valorManoJugador = 0;
+
         for (int i = 0; i < manoJugador.size(); i++) {
             if (manoJugador.get(i) == 'A') {
                 if (valorManoJugador + 11 <= 21) {
